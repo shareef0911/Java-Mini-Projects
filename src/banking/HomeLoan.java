@@ -17,7 +17,7 @@ public class HomeLoan extends Loan {
 		double salary = hl.getSalary();
 		byte age = hl.getAge();
 		
-		if(cibil >700 && salary > 600000 && age > 25 && age < 55 && hl.isValidPhone() && hl.isValidPan() && hl.isValidAadhaar()) {
+		if(cibil >700 && salary >= 600000 && age > 25 && age < 55 && hl.isValidPhone() && hl.isValidPan() && hl.isValidAadhaar()) {
 			System.out.println("Congratulations Your Home Loan is Approved !!");
 			System.out.println("Your Loan RoI is "+hl.getROI());
 			System.out.println("Confirm your Address Details : ");
