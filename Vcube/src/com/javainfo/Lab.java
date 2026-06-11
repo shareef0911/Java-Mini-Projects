@@ -1,3 +1,4 @@
+package com.javainfo;
 
 public class Lab {
 	 static Lab m = new Lab();//in class level variable to create with static variable for all instance method 
