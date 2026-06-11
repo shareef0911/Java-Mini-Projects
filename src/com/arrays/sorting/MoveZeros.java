@@ -1,23 +1,27 @@
 package com.arrays.sorting;
 
+import java.util.Arrays;
+
 public class MoveZeros {
 
 	public static void main(String[] args) {
+
 		int[] nums = { 5, 0, 7, 0, 3, 0, 2 };
-		int temp = 0;
-		for (int i = 0; i < nums.length - 1; i++) {
-			for (int j = i + 1; j < nums.length - 1 - i; j++) {
-				if (nums[j] == 0) {
-					temp = nums[j];
-					nums[j] = nums[j + 1];
-					nums[j + 1] = temp;
-				}
+
+		int index = 0;
+
+		// Move all non-zero elements to the front
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] != 0) {
+				nums[index++] = nums[i];
 			}
 		}
 
-		for (int n : nums) {
-			System.out.print(n + " ");
+		// Fill remaining positions with zeros
+		while (index < nums.length) {
+			nums[index++] = 0;
 		}
-	}
 
+		System.out.println(Arrays.toString(nums));
+	}
 }

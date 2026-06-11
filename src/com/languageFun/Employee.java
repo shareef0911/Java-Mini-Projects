@@ -30,6 +30,7 @@ public class Employee {
 		System.out.println("PF : "+pf);
 		System.out.println("Allowance : "+allowance);
 		System.out.println("net_salary : "+net_salary);
+		sc.close();
 		
 	}
 

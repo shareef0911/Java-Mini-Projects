@@ -14,7 +14,7 @@ public class LongNumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LongNumber l = new LongNumber();
-		BigInteger b3 = l.b1.add(l.b2);
+	//	BigInteger b3 = l.b1.add(l.b2);
 		System.out.println("BigInteger Function: ");
 		System.out.println("Addition : "+l.b1.add(l.b2));
 		System.out.println("Subtraction : "+ l.b1.subtract(l.b2));

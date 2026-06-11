@@ -11,7 +11,7 @@ public class TestDemo3 extends TestDemo1{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		acessing default varaibles and methods in within package
-		TestDemo1 t1 = new TestDemo1();//public
+		//TestDemo1 t1 = new TestDemo1();//public
 //		t1.method2();
 		
 		TestDemo3 t2 = new TestDemo3();//object with create with sub class

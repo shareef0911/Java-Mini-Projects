@@ -1,8 +1,6 @@
 package com.languageFun;
 
 import java.util.Scanner;
-import java.io.PrintStream;
-
 public class CovertIntToB {
 
 	public static void main(String[] args) {
@@ -14,6 +12,7 @@ public class CovertIntToB {
 			long l2 = l%2;
 			System.out.println("Remainder : "+l2);
 		}
+		sc.close();
 	}
 
 }
